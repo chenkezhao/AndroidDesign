@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#52af8a"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <TextView
@@ -11,8 +12,16 @@
         android:textColor="#000"
         android:text="哈哈"/>
 
-    <ListView
+    <!--<ListView
         android:id="@+id/viewAppBar_lv_list"
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>-->
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/viewAppBar_rv_list"
+        android:divider="#ffff0000"
+        android:dividerHeight="10dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
+
 </RelativeLayout>

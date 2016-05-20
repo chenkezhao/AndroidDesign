@@ -2,6 +2,9 @@ package zhao.androiddesign.adapter;
 
 import android.content.Context;
 import android.support.v4.view.PagerAdapter;
+import android.support.v7.widget.DefaultItemAnimator;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,6 +17,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import zhao.androiddesign.R;
+import zhao.androiddesign.view.DividerItemDecoration;
 
 /**
  * Created by ManJay on 2016/5/20.
@@ -55,24 +59,46 @@ public class AppBarViewPagerAdapter extends PagerAdapter {
         container.removeView((View) object);//删除选项卡
     }
 
+
     @Override
     public Object instantiateItem(ViewGroup container, int position) {
 
-        RelativeLayout rl = (RelativeLayout) LayoutInflater.from(mContext).inflate(R.layout.view_appbar_content,null);
-        ListView mListView = (ListView) rl.findViewById(R.id.viewAppBar_lv_list);
-        mListView.setAdapter(new ArrayAdapter<String>(mContext,android.R.layout.simple_list_item_1,getData()));
+        RelativeLayout rl = (RelativeLayout) LayoutInflater.from(mContext).inflate(R.layout.view_appbar_content, null);
+//        ListView mListView = (ListView) rl.findViewById(R.id.viewAppBar_lv_list);
+//        mListView.setAdapter(new ArrayAdapter<String>(mContext,android.R.layout.simple_list_item_1,getData()));
+
+        RecyclerView mRecyclerView = (RecyclerView) rl.findViewById(R.id.viewAppBar_rv_list);
+        //设置布局管理器
+        mRecyclerView.setLayoutManager(new LinearLayoutManager(mContext));
+        //设置adapter
+        AppBarListAdapter appBarListAdapter = new AppBarListAdapter(mContext, initData());
+        mRecyclerView.setAdapter(appBarListAdapter);
+        //设置Item增加、移除动画
+        mRecyclerView.setItemAnimator(new DefaultItemAnimator());
+        //添加分割线
+        mRecyclerView.addItemDecoration(new DividerItemDecoration(
+                mContext, DividerItemDecoration.VERTICAL_LIST));
+
+
         TextView tv = (TextView) rl.findViewById(R.id.viewAppBar_tv_content);
         tv.setText(titles[position]);
         container.addView(rl);//添加页卡
         return rl;
     }
 
+    protected List<String> initData() {
+        List<String> mDatas = new ArrayList<String>();
+        for (int i = 'A'; i < 'z'; i++) {
+            mDatas.add("" + (char) i);
+        }
+        return mDatas;
+    }
 
-    private String[] getData(){
+    private String[] getData() {
         String[] data = {};
         List<String> list = new ArrayList<String>();
-        for(int i=0;i<100;i++){
-            list.add(i+"");
+        for (int i = 0; i < 100; i++) {
+            list.add(i + "");
         }
         return list.toArray(data);
     }
