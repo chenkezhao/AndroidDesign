@@ -17,7 +17,7 @@ import zhao.androiddesign.R;
 public class MainActivity extends AppCompatActivity{
 
     private ListView mListView;
-    private String[] menus = {"AppBarLayout","CollapsingToolbarLayout","BottomSheetBehavior、BottomSheetDialog(代替Popupwindow)、FloatingActionButton","Snackbar"};
+    private String[] menus = {"AppBarLayout","CollapsingToolbarLayout","BottomSheetBehavior、BottomSheetDialog(代替Popupwindow)、FloatingActionButton","Snackbar","SwipeDismissBehavior"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,6 +64,9 @@ public class MainActivity extends AppCompatActivity{
                         });
                         flag = false;
 
+                        break;
+                    case 4:
+                        intent = new Intent(MainActivity.this,SwipeDismissBehaviorActivity.class);
                         break;
                     default:
                         break;
