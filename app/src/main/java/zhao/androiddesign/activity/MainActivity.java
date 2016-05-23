@@ -2,6 +2,7 @@ package zhao.androiddesign.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
@@ -13,10 +14,10 @@ import zhao.androiddesign.R;
 /**
  * 主页面
  */
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity{
 
     private ListView mListView;
-    private String[] menus = {"AppBarLayout","CollapsingToolbarLayout","BottomSheetBehavior+BottomSheetDialog(代替Popupwindow)"};
+    private String[] menus = {"AppBarLayout","CollapsingToolbarLayout","BottomSheetBehavior、BottomSheetDialog(代替Popupwindow)、FloatingActionButton","Snackbar"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent intent = null;
+                boolean flag = true;
                 switch (position){
                     case 0://AppBarLayout
                         intent = new Intent(MainActivity.this,AppBarLayoutActivity.class);
@@ -51,10 +53,24 @@ public class MainActivity extends AppCompatActivity {
                     case 2://BottomSheetBehavior
                         intent = new Intent(MainActivity.this,BottomSheetBehaviorActivity.class);
                         break;
+                    case 3://Snackbar
+                        final Snackbar snackbar = Snackbar.make(view,"弹出提示了，小子",Snackbar.LENGTH_LONG);
+                        snackbar.show();
+                        snackbar.setAction("取消", new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                snackbar.dismiss();
+                            }
+                        });
+                        flag = false;
+
+                        break;
                     default:
                         break;
                 }
-                startActivity(intent);
+                if(flag){
+                    startActivity(intent);
+                }
             }
         });
     }
