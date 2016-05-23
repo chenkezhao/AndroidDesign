@@ -152,8 +152,13 @@ public class MyDialog extends AppCompatDialog {
         try {
             Field field = BottomSheetBehavior.class.getDeclaredField("mState");
             field.setAccessible(true);
-            //field.setInt(bottomSheetBehavior, BottomSheetBehavior.STATE_EXPANDED);//全部展开状态
-            field.setInt(bottomSheetBehavior, BottomSheetBehavior.STATE_COLLAPSED);//展开设置的默认高度状态
+
+            int state = field.getInt(bottomSheetBehavior);
+            if(state==BottomSheetBehavior.STATE_EXPANDED){
+                field.setInt(bottomSheetBehavior, BottomSheetBehavior.STATE_EXPANDED);//全部展开状态
+            }else{
+                field.setInt(bottomSheetBehavior, BottomSheetBehavior.STATE_COLLAPSED);//展开设置的默认高度状态
+            }
         } catch (NoSuchFieldException e) {
             Log.e("BottomSheetBehavior", "Error setting BottomSheetBehavior initial state (1)", e);
         } catch (IllegalAccessException e) {
