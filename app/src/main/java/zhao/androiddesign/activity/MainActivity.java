@@ -16,7 +16,7 @@ import zhao.androiddesign.R;
 public class MainActivity extends AppCompatActivity {
 
     private ListView mListView;
-    private String[] menus = {"AppBarLayout"};
+    private String[] menus = {"AppBarLayout","CollapsingToolbarLayout"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,6 +44,9 @@ public class MainActivity extends AppCompatActivity {
                 switch (position){
                     case 0://AppBarLayout
                         intent = new Intent(MainActivity.this,AppBarLayoutActivity.class);
+                        break;
+                    case 1://CollapsingToolbarLayout
+                        intent = new Intent(MainActivity.this,CollapsingToolbarActivity.class);
                         break;
                     default:
                         break;
