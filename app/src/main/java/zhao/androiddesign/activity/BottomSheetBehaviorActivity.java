@@ -58,26 +58,22 @@ public class BottomSheetBehaviorActivity extends AppCompatActivity {
         });
 
         //recyclerView列表弹框
-        View view = LayoutInflater.from(this).inflate(R.layout.layout_recycler,null);
-        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
-        linearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
-        recyclerView = (RecyclerView) view.findViewById(R.id.recycler_rv_list);
-        recyclerView.setLayoutManager(linearLayoutManager);
-        recyclerView.setAdapter(new AppBarListAdapter(this,initData()));
+        dialog = new BottomSheetDialog(BottomSheetBehaviorActivity.this);
 
-        dialog = new BottomSheetDialog(this);
-        dialog.setContentView((View) recyclerView.getParent());
         button2 = (FloatingActionButton) findViewById(R.id.sheetBehavior_fab_btn2);
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //recyclerView列表弹框
+                View view = LayoutInflater.from(BottomSheetBehaviorActivity.this).inflate(R.layout.layout_recycler,null);
+                LinearLayoutManager linearLayoutManager = new LinearLayoutManager(BottomSheetBehaviorActivity.this);
+                linearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
+                recyclerView = (RecyclerView) view.findViewById(R.id.recycler_rv_list);
+                recyclerView.setLayoutManager(linearLayoutManager);
+                recyclerView.setAdapter(new AppBarListAdapter(BottomSheetBehaviorActivity.this,initData()));
+
+                dialog.setContentView((View) recyclerView.getParent());
                 dialog.show();
-            }
-        });
-        dialog.setOnCancelListener(new DialogInterface.OnCancelListener() {
-            @Override
-            public void onCancel(DialogInterface dialog) {
-                dialog.dismiss();
             }
         });
     }
