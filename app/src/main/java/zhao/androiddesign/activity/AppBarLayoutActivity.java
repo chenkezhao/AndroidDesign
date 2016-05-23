@@ -1,8 +1,10 @@
 package zhao.androiddesign.activity;
 
 import android.os.Bundle;
+import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 
@@ -22,6 +24,12 @@ public class AppBarLayoutActivity extends AppCompatActivity {
         setContentView(R.layout.activity_app_bar_layout);
         init();
         initView();
+
+        //显示菜单
+        ActionBar actionBar = getSupportActionBar();
+        if(actionBar!=null){
+            actionBar.setDisplayHomeAsUpEnabled(true);
+        }
 
         //第一步
         mTabLayout.setOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
@@ -56,5 +64,6 @@ public class AppBarLayoutActivity extends AppCompatActivity {
         mTabLayout = (TabLayout) findViewById(R.id.appbar_tl_tab);
         mViewPager = (ViewPager) findViewById(R.id.appbar_vp_pager);
         mToolbar = (Toolbar) findViewById(R.id.appbar_tb_toolbar);
+        setSupportActionBar(mToolbar);
     }
 }

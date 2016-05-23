@@ -16,7 +16,7 @@ import zhao.androiddesign.R;
 public class MainActivity extends AppCompatActivity {
 
     private ListView mListView;
-    private String[] menus = {"CoordinatorLayout+AppBarLayout"};
+    private String[] menus = {"AppBarLayout"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
