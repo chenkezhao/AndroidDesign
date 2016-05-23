@@ -16,7 +16,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".activity.AppBarLayoutActivity" />
-        <activity android:name=".activity.CollapsingToolbarActivity"></activity>
+        <activity android:name=".activity.CollapsingToolbarActivity" />
+        <activity android:name=".activity.BottomSheetBehaviorActivity"></activity>
     </application>
 
 </manifest>
