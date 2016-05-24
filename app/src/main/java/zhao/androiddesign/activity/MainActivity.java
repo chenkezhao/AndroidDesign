@@ -17,9 +17,9 @@ import zhao.androiddesign.R;
 public class MainActivity extends AppCompatActivity {
 
     private ListView mListView;
-    private String[] menus = {"AppBarLayout", "CollapsingToolbarLayout", "BottomSheetBehavior、" +
+    private String[] menus = {"AppBarLayout、TabLayout ViewPager", "CollapsingToolbarLayout", "BottomSheetBehavior、" +
             "BottomSheetDialog(代替Popupwindow)、FloatingActionButton", "Snackbar",
-            "SwipeDismissBehavior", "TabLayout TabItem、TextInputLayout"};
+            "SwipeDismissBehavior", "TabLayout TabItem、TextInputLayout","自定义 ActionBar"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -73,6 +73,9 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case 5:
                         intent = new Intent(MainActivity.this, TabItemActivity.class);
+                        break;
+                    case 6:
+                        intent = new Intent(MainActivity.this, ActionBarActivity.class);
                         break;
                     default:
                         break;
