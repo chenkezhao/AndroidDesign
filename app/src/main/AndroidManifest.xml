@@ -18,7 +18,8 @@
         <activity android:name=".activity.AppBarLayoutActivity" />
         <activity android:name=".activity.CollapsingToolbarActivity" />
         <activity android:name=".activity.BottomSheetBehaviorActivity" />
-        <activity android:name=".activity.SwipeDismissBehaviorActivity"></activity>
+        <activity android:name=".activity.SwipeDismissBehaviorActivity" />
+        <activity android:name=".activity.TabItemActivity"></activity>
     </application>
 
 </manifest>
