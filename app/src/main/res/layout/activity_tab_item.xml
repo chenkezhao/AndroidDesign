@@ -28,6 +28,11 @@
 
         </android.support.design.widget.TabLayout>
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="*支持提示认证后反馈的错误"
+            android:textColor="#ff0000"/>
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
