@@ -7,6 +7,17 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
         <!-- <item name="bottomSheetDialogTheme">@style/AppBottomSheetDialogTheme</item>-->
+        <!--设置波纹颜色-->
+        <item name="android:colorControlHighlight">#0a6e14</item>
+        <!--设置checkbox等控件的选中颜色
+        <item name="android:colorAccent">#0a6e14</item>-->
+
+        <!--
+        波纹设置
+        组件中的属性
+        android:background="?android:attr/selectableItemBackground"波纹有边界
+        android:background="?android:attr/selectableItemBackgroundBorderless"波纹超出边界
+        -->
     </style>
     <style name="AppTheme1" parent="Theme.AppCompat.Light">
         <!-- Customize your theme here. -->
