@@ -25,4 +25,9 @@
     </style>
 
 
+    <style name="MyOverflowText" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textColor">#ff0000</item>
+    </style>
+
+
 </resources>

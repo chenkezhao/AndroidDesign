@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -29,16 +30,21 @@
         </android.support.design.widget.TabLayout>
 
         <View
-            android:layout_marginBottom="30dp"
             android:layout_width="match_parent"
             android:layout_height="1px"
-            android:background="#000"/>
+            android:layout_marginBottom="30dp"
+            android:background="#000" />
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="*支持提示认证后反馈的错误"
-            android:textColor="#ff0000"/>
+            android:textColor="#ff0000" />
+
         <android.support.design.widget.TextInputLayout
+            app:counterEnabled="true"
+            app:counterMaxLength="3"
+            app:counterOverflowTextAppearance="@style/MyOverflowText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
@@ -51,6 +57,9 @@
         </android.support.design.widget.TextInputLayout>
 
         <android.support.design.widget.TextInputLayout
+            app:counterEnabled="true"
+            app:counterMaxLength="3"
+            app:counterOverflowTextAppearance="@style/MyOverflowText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
