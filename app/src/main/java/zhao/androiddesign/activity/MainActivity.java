@@ -17,7 +17,7 @@ import zhao.androiddesign.R;
 public class MainActivity extends AppCompatActivity {
 
     private ListView mListView;
-    private String[] menus = {"AppBarLayout、TabLayout ViewPager", "CollapsingToolbarLayout", "BottomSheetBehavior、" +
+    private String[] menus = {"AppBarLayout、TabLayout、ViewPager", "CollapsingToolbarLayout", "BottomSheetBehavior、" +
             "BottomSheetDialog(代替Popupwindow)、FloatingActionButton", "Snackbar",
             "SwipeDismissBehavior", "TabLayout TabItem、TextInputLayout","自定义 ActionBar","ActionBar的升级版ToolBar"};
 
