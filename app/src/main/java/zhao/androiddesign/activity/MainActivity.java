@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
     private ListView mListView;
     private String[] menus = {"AppBarLayout、TabLayout ViewPager", "CollapsingToolbarLayout", "BottomSheetBehavior、" +
             "BottomSheetDialog(代替Popupwindow)、FloatingActionButton", "Snackbar",
-            "SwipeDismissBehavior", "TabLayout TabItem、TextInputLayout","自定义 ActionBar"};
+            "SwipeDismissBehavior", "TabLayout TabItem、TextInputLayout","自定义 ActionBar","ActionBar的升级版ToolBar"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -76,6 +76,9 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case 6:
                         intent = new Intent(MainActivity.this, ActionBarActivity.class);
+                        break;
+                    case 7:
+                        intent = new Intent(MainActivity.this, ToolbarActivity.class);
                         break;
                     default:
                         break;
