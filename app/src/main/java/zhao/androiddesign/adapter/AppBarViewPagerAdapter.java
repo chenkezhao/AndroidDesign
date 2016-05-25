@@ -12,6 +12,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -73,6 +74,17 @@ public class AppBarViewPagerAdapter extends PagerAdapter {
         //设置adapter
         AppBarListAdapter appBarListAdapter = new AppBarListAdapter(mContext, initData());
         mRecyclerView.setAdapter(appBarListAdapter);
+        appBarListAdapter.setOnItemClickLitener(new AppBarListAdapter.OnItemClickLitener() {
+            @Override
+            public void onItemClick(View view, int position) {
+                Toast.makeText(mContext, position+"", Toast.LENGTH_SHORT).show();
+            }
+
+            @Override
+            public void onItemLongClick(View view, int position) {
+
+            }
+        });
         //设置Item增加、移除动画
         mRecyclerView.setItemAnimator(new DefaultItemAnimator());
         //添加分割线

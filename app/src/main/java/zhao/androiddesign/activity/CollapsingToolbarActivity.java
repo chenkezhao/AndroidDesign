@@ -11,12 +11,14 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import zhao.androiddesign.R;
 import zhao.androiddesign.adapter.AppBarListAdapter;
+import zhao.androiddesign.adapter.AppBarViewPagerAdapter;
 
 public class CollapsingToolbarActivity extends AppCompatActivity {
 
@@ -70,7 +72,19 @@ public class CollapsingToolbarActivity extends AppCompatActivity {
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
         linearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
         recyclerView.setLayoutManager(linearLayoutManager);
-        recyclerView.setAdapter(new AppBarListAdapter(this,initData()));
+        AppBarListAdapter appBarListAdapter = new AppBarListAdapter(this,initData());
+        recyclerView.setAdapter(appBarListAdapter);
+        appBarListAdapter.setOnItemClickLitener(new AppBarListAdapter.OnItemClickLitener() {
+            @Override
+            public void onItemClick(View view, int position) {
+                Toast.makeText(CollapsingToolbarActivity.this, position+"", Toast.LENGTH_SHORT).show();
+            }
+
+            @Override
+            public void onItemLongClick(View view, int position) {
+
+            }
+        });
 
 
     }
