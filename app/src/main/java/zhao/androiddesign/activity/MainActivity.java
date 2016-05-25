@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -38,6 +39,9 @@ public class MainActivity extends AppCompatActivity {
     private void initView() {
         mListView = (ListView) findViewById(R.id.main_lv_menu);
         mListView.setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, menus));
+
+        //mListView.addHeaderView(LayoutInflater.from(this).inflate(R.layout.layout_title,null));
+        mListView.addFooterView(LayoutInflater.from(this).inflate(R.layout.layout_title,null));
     }
 
     private void initEvent() {
@@ -81,6 +85,7 @@ public class MainActivity extends AppCompatActivity {
                         intent = new Intent(MainActivity.this, ToolbarActivity.class);
                         break;
                     default:
+                        flag = false;
                         break;
                 }
                 if (flag) {
