@@ -24,7 +24,8 @@
             android:name=".activity.ActionBarActivity"
             android:theme="@style/AppTheme1" />
         <activity android:name=".activity.ToolbarActivity" />
-        <activity android:name=".activity.SlidingPaneLayoutActivity"></activity>
+        <activity android:name=".activity.SlidingPaneLayoutActivity" />
+        <activity android:name=".activity.CardViewActivity"></activity>
     </application>
 
 </manifest>

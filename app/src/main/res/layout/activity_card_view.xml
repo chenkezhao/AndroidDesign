@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    app:cardBackgroundColor="#0b0b60"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="10dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="false"
+    app:contentPadding="10dp">
+
+    <!--
+    app:cardBackgroundColor
+
+    这个应该不需要解释
+
+    app:cardCornerRadius
+
+    圆角大小的设置
+
+    app:cardElevation
+
+    阴影大小的设置
+
+    app:cardPreventCornerOverlap="true"
+    5.0之前要设置这个属性为true，否则没有圆角(可以配合contentPadding使用)
+
+    app:cardUseCompatPadding="true"
+
+    View在5.1.0上是完全充满父控件，而4.x的就不是呢？那是因为CardView在<5.0的版本上的实现是在内部添加一部分padding，以方便阴影shadow的绘制，而5.0+则不会。那么有办法能设置嘛？因为我就是要5.0+上也在内部绘制shadow。当然可以！这就需要app:cardUseCompatPadding的帮忙了，默认情况下，它是false的，将它设为true
+    -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#007131"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="圆角+阴影"
+        android:textColor="#fff"
+        android:textSize="30sp" />
+</android.support.v7.widget.CardView>
