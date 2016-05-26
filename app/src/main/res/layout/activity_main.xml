@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<lib.homhomlib.design.SlidingLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/slidingLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="zhao.androiddesign.activity.MainActivity">
+    app:background_view="@layout/listview_bg"
+    app:sliding_mode="both">
 
     <ListView
+        android:background="#fff"
         android:id="@+id/main_lv_menu"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
-</RelativeLayout>
+        android:layout_height="match_parent" />
+</lib.homhomlib.design.SlidingLayout>
