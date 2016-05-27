@@ -1,7 +1,7 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <style name="AppThemeBase" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
@@ -18,7 +18,12 @@
         android:background="?android:attr/selectableItemBackground"波纹有边界
         android:background="?android:attr/selectableItemBackgroundBorderless"波纹超出边界
         -->
+        <item name="android:windowIsTranslucent">true</item>
     </style>
+
+    <style name="AppTheme" parent="AppThemeBase"></style>
+
+
     <style name="AppTheme1" parent="Theme.AppCompat.Light">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>

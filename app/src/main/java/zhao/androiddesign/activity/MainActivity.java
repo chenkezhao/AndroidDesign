@@ -10,17 +10,21 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import me.imid.swipebacklayout.lib.SwipeBackLayout;
+import me.imid.swipebacklayout.lib.app.SwipeBackActivity;
 import zhao.androiddesign.R;
 
 /**
  * 主页面
  */
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends SwipeBackActivity {
 
     private ListView mListView;
     private String[] menus = {"AppBarLayout、TabLayout、ViewPager", "CollapsingToolbarLayout", "BottomSheetBehavior、" +
             "BottomSheetDialog(代替Popupwindow)、FloatingActionButton", "Snackbar",
             "SwipeDismissBehavior", "TabLayout TabItem、TextInputLayout","自定义 ActionBar","ActionBar的升级版ToolBar","SlidingPaneLayout","CardView"};
+
+    private SwipeBackLayout swipeBackLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +46,10 @@ public class MainActivity extends AppCompatActivity {
 
         //mListView.addHeaderView(LayoutInflater.from(this).inflate(R.layout.layout_title,null));
         mListView.addFooterView(LayoutInflater.from(this).inflate(R.layout.layout_title,null));
+
+        //左滑动关闭
+        swipeBackLayout = getSwipeBackLayout();
+        swipeBackLayout.setEdgeTrackingEnabled(SwipeBackLayout.EDGE_LEFT);
     }
 
     private void initEvent() {
