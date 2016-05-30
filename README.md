@@ -21,3 +21,4 @@ Android新特性、新组件及当前较潮流的设计Demo集合——Android M
 ![chenkezhao](https://github.com/chenkezhao/AndroidDesign/blob/master/doc/smaple/7.gif "陈科肇")
 ##SlidingPaneLayout、CardView、滑动退出activity
 ![chenkezhao](https://github.com/chenkezhao/AndroidDesign/blob/master/doc/smaple/9.gif "陈科肇")
+![chenkezhao](https://github.com/chenkezhao/AndroidDesign/blob/master/doc/smaple/10.gif "陈科肇")
