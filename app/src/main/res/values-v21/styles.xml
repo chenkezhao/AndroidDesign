@@ -2,7 +2,7 @@
 <resources>
 
         <style name="AppTheme" parent="AppThemeBase">
-                <item name="android:navigationBarColor">#00ffffff</item>
-                <item name="android:statusBarColor">#00ffffff</item>
+                <item name="android:navigationBarColor">#c0007419</item>
+                <item name="android:statusBarColor">#c0007419</item>
         </style>
 </resources>
