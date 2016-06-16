@@ -26,5 +26,8 @@ Android新特性、新组件及当前较潮流的设计Demo集合——Android M
 ![chenkezhao](https://github.com/chenkezhao/AndroidDesign/blob/master/doc/smaple/11.gif "陈科肇")
 ##SwipeBackLayout类似微信，可以滑动关闭当前Activity
 ![chenkezhao](https://github.com/chenkezhao/AndroidDesign/blob/master/doc/smaple/12.gif "陈科肇")
+##NavigationDrawer导航菜单、AnimatedVectorDrawable使用SVG-矢量图(不失清晰度的情况下进行缩放)
+![chenkezhao](https://github.com/chenkezhao/AndroidDesign/blob/master/doc/smaple/13.gif "陈科肇")
+![chenkezhao](https://github.com/chenkezhao/AndroidDesign/blob/master/doc/smaple/14.png "陈科肇")
 
 
