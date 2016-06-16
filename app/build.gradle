@@ -22,9 +22,13 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
+    /*圆角和阴影*/
+    /*仿微信网页浏览的下拉*/
+    /*activity滑动退出activity*/
     compile 'com.android.support:appcompat-v7:23.4.0'
     compile 'com.android.support:design:23.4.0'
-    compile 'com.android.support:cardview-v7:23.4.0'/*圆角和阴影*/
-    compile 'homhomlin.lib:sldinglayout:0.8.1'/*仿微信网页浏览的下拉*/
-    compile 'me.imid.swipebacklayout.lib:library:1.0.0'/*activity滑动退出activity*/
+    compile 'com.android.support:cardview-v7:23.4.0'
+    compile 'homhomlin.lib:sldinglayout:0.8.1'
+    compile 'me.imid.swipebacklayout.lib:library:1.0.0'
+    compile 'com.android.support:support-v4:23.4.0'
 }

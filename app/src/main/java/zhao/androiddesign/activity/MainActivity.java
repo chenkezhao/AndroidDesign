@@ -22,10 +22,10 @@ public class MainActivity extends SwipeBackActivity {
     private ListView mListView;
     private String[] menus = {"AppBarLayout、TabLayout、ViewPager", "CollapsingToolbarLayout", "BottomSheetBehavior、" +
             "BottomSheetDialog(代替Popupwindow)、FloatingActionButton", "Snackbar",
-            "SwipeDismissBehavior", "TabLayout TabItem、TextInputLayout","自定义 ActionBar","ActionBar的升级版ToolBar","SlidingPaneLayout","CardView"};
+            "SwipeDismissBehavior", "TabLayout TabItem、TextInputLayout","自定义 ActionBar","ActionBar的升级版ToolBar","SlidingPaneLayout","CardView","DrawerLayout(侧滑菜单)"};
     private Class[] classs = {AppBarLayoutActivity.class,CollapsingToolbarActivity.class,
             BottomSheetBehaviorActivity.class,null,SwipeDismissBehaviorActivity.class,TabItemActivity.class,
-            ActionBarActivity.class,ToolbarActivity.class,SlidingPaneLayoutActivity.class,CardViewActivity.class};
+            ActionBarActivity.class,ToolbarActivity.class,SlidingPaneLayoutActivity.class,CardViewActivity.class,DrawerLayoutActivity.class};
 
     private SwipeBackLayout swipeBackLayout;
 
