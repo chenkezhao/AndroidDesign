@@ -23,6 +23,9 @@ public class MainActivity extends SwipeBackActivity {
     private String[] menus = {"AppBarLayout、TabLayout、ViewPager", "CollapsingToolbarLayout", "BottomSheetBehavior、" +
             "BottomSheetDialog(代替Popupwindow)、FloatingActionButton", "Snackbar",
             "SwipeDismissBehavior", "TabLayout TabItem、TextInputLayout","自定义 ActionBar","ActionBar的升级版ToolBar","SlidingPaneLayout","CardView"};
+    private Class[] classs = {AppBarLayoutActivity.class,CollapsingToolbarActivity.class,
+            BottomSheetBehaviorActivity.class,null,SwipeDismissBehaviorActivity.class,TabItemActivity.class,
+            ActionBarActivity.class,ToolbarActivity.class,SlidingPaneLayoutActivity.class,CardViewActivity.class};
 
     private SwipeBackLayout swipeBackLayout;
 
@@ -56,55 +59,21 @@ public class MainActivity extends SwipeBackActivity {
         mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent intent = null;
-                boolean flag = true;
-                switch (position) {
-                    case 0://AppBarLayout
-                        intent = new Intent(MainActivity.this, AppBarLayoutActivity.class);
-                        break;
-                    case 1://CollapsingToolbarLayout
-                        intent = new Intent(MainActivity.this, CollapsingToolbarActivity.class);
-                        break;
-                    case 2://BottomSheetBehavior
-                        intent = new Intent(MainActivity.this, BottomSheetBehaviorActivity.class);
-                        break;
-                    case 3://Snackbar
-                        final Snackbar snackbar = Snackbar.make(view, "弹出提示了，小子", Snackbar.LENGTH_LONG);
-                        snackbar.show();
-                        snackbar.setAction("取消", new View.OnClickListener() {
-                            @Override
-                            public void onClick(View v) {
-                                snackbar.dismiss();
-                            }
-                        });
-                        flag = false;
-
-                        break;
-                    case 4:
-                        intent = new Intent(MainActivity.this, SwipeDismissBehaviorActivity.class);
-                        break;
-                    case 5:
-                        intent = new Intent(MainActivity.this, TabItemActivity.class);
-                        break;
-                    case 6:
-                        intent = new Intent(MainActivity.this, ActionBarActivity.class);
-                        break;
-                    case 7:
-                        intent = new Intent(MainActivity.this, ToolbarActivity.class);
-                        break;
-                    case 8:
-                        intent = new Intent(MainActivity.this, SlidingPaneLayoutActivity.class);
-                        break;
-                    case 9:
-                        intent = new Intent(MainActivity.this, CardViewActivity.class);
-                        break;
-                    default:
-                        flag = false;
-                        break;
+                if(position>classs.length-1){
+                    return;
                 }
-                if (flag) {
-                    startActivity(intent);
+                if(position==3){//Snackbar
+                    final Snackbar snackbar = Snackbar.make(view, "弹出提示了，小子", Snackbar.LENGTH_LONG);
+                    snackbar.show();
+                    snackbar.setAction("取消", new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            snackbar.dismiss();
+                        }
+                    });
+                    return;
                 }
+                startActivity(new Intent(MainActivity.this, classs[position]));
             }
         });
     }
