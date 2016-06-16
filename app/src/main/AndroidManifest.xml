@@ -26,7 +26,11 @@
         <activity android:name=".activity.ToolbarActivity" />
         <activity android:name=".activity.SlidingPaneLayoutActivity" />
         <activity android:name=".activity.CardViewActivity" />
-        <activity android:name=".activity.DrawerLayoutActivity"
+        <activity
+            android:name=".activity.DrawerLayoutActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.NavigationDrawerActivity"
             android:theme="@style/AppTheme"/>
     </application>
 
