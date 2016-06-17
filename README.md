@@ -19,9 +19,10 @@ Android新特性、新组件及当前较潮流的设计Demo集合——Android M
 ![chenkezhao](https://github.com/chenkezhao/AndroidDesign/blob/master/doc/smaple/6.gif "陈科肇")
 ##自定义ActionBar、ToolBar
 ![chenkezhao](https://github.com/chenkezhao/AndroidDesign/blob/master/doc/smaple/7.gif "陈科肇")
-##SlidingPaneLayout、CardView、滑动退出activity
+##SlidingPaneLayout滑动菜单、CardView、滑动退出activity
 ![chenkezhao](https://github.com/chenkezhao/AndroidDesign/blob/master/doc/smaple/9.gif "陈科肇")
 ![chenkezhao](https://github.com/chenkezhao/AndroidDesign/blob/master/doc/smaple/10.gif "陈科肇")
+![chenkezhao](https://github.com/chenkezhao/AndroidDesign/blob/master/doc/smaple/15.gif "陈科肇")
 ##DrawerLayout+Toolbar实现抽屉菜单
 ![chenkezhao](https://github.com/chenkezhao/AndroidDesign/blob/master/doc/smaple/11.gif "陈科肇")
 ##SwipeBackLayout类似微信，可以滑动关闭当前Activity
