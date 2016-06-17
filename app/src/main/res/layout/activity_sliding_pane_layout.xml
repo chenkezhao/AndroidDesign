@@ -2,6 +2,7 @@
 <android.support.v4.widget.SlidingPaneLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/spl_root"
+    android:background="#0d4502"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <TextView
