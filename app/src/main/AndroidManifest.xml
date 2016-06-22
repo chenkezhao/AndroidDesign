@@ -31,7 +31,9 @@
             android:theme="@style/AppTheme" />
         <activity
             android:name=".activity.NavigationDrawerActivity"
-            android:theme="@style/AppTheme"/>
+            android:theme="@style/AppTheme" />
+        <activity android:name=".activity.RecyclerViewActivity"
+            android:theme="@style/AppTheme1"/>
     </application>
 
 </manifest>

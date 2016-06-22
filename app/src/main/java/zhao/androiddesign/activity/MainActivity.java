@@ -20,12 +20,21 @@ import zhao.androiddesign.R;
 public class MainActivity extends SwipeBackActivity {
 
     private ListView mListView;
-    private String[] menus = {"AppBarLayout、TabLayout、ViewPager", "CollapsingToolbarLayout", "BottomSheetBehavior、" +
-            "BottomSheetDialog(代替Popupwindow)、FloatingActionButton", "Snackbar",
-            "SwipeDismissBehavior", "TabLayout TabItem、TextInputLayout","自定义 ActionBar","ActionBar的升级版ToolBar","CardView","SlidingPaneLayout滑动菜单","DrawerLayout抽屉菜单","NavigationDrawer导航菜单"};
-    private Class[] classs = {AppBarLayoutActivity.class,CollapsingToolbarActivity.class,
+    private String[] menus = {
+            "AppBarLayout、TabLayout、ViewPager", "CollapsingToolbarLayout",
+            "BottomSheetBehavior、BottomSheetDialog(代替Popupwindow)、FloatingActionButton", "Snackbar",
+            "SwipeDismissBehavior", "TabLayout TabItem、TextInputLayout","自定义 ActionBar","ActionBar的升级版ToolBar","CardView",
+            "SlidingPaneLayout滑动菜单","DrawerLayout抽屉菜单","NavigationDrawer导航菜单",
+            "RecyclerView(ListView、GridView、瀑布流)"
+
+    };
+    private Class[] classs = {
+            AppBarLayoutActivity.class,CollapsingToolbarActivity.class,
             BottomSheetBehaviorActivity.class,null,SwipeDismissBehaviorActivity.class,TabItemActivity.class,
-            ActionBarActivity.class,ToolbarActivity.class,CardViewActivity.class,SlidingPaneLayoutActivity.class,DrawerLayoutActivity.class,NavigationDrawerActivity.class};
+            ActionBarActivity.class,ToolbarActivity.class,CardViewActivity.class,SlidingPaneLayoutActivity.class,
+            DrawerLayoutActivity.class,NavigationDrawerActivity.class,
+            RecyclerViewActivity.class
+    };
 
     private SwipeBackLayout swipeBackLayout;
 
