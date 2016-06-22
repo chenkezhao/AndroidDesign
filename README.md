@@ -31,4 +31,4 @@ Android新特性、新组件及当前较潮流的设计Demo集合——Android M
 ![chenkezhao](https://github.com/chenkezhao/AndroidDesign/blob/master/doc/smaple/13.gif "陈科肇")
 ![chenkezhao](https://github.com/chenkezhao/AndroidDesign/blob/master/doc/smaple/14.png "陈科肇")
 ##RecyclerView(ListView[水平、垂直]、GridView、GridView瀑布流) 的简单使用
-
+![chenkezhao](https://github.com/chenkezhao/AndroidDesign/blob/master/doc/smaple/16.gif "陈科肇")
