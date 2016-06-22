@@ -25,7 +25,7 @@ public class MainActivity extends SwipeBackActivity {
             "BottomSheetBehavior、BottomSheetDialog(代替Popupwindow)、FloatingActionButton", "Snackbar",
             "SwipeDismissBehavior", "TabLayout TabItem、TextInputLayout","自定义 ActionBar","ActionBar的升级版ToolBar","CardView",
             "SlidingPaneLayout滑动菜单","DrawerLayout抽屉菜单","NavigationDrawer导航菜单",
-            "RecyclerView(ListView、GridView、瀑布流)"
+            "RecyclerView(ListView、GridView、瀑布流)","RecyclerView MultipleItem"
 
     };
     private Class[] classs = {
@@ -33,7 +33,7 @@ public class MainActivity extends SwipeBackActivity {
             BottomSheetBehaviorActivity.class,null,SwipeDismissBehaviorActivity.class,TabItemActivity.class,
             ActionBarActivity.class,ToolbarActivity.class,CardViewActivity.class,SlidingPaneLayoutActivity.class,
             DrawerLayoutActivity.class,NavigationDrawerActivity.class,
-            RecyclerViewActivity.class
+            RecyclerViewActivity.class,RecyclerMultipleItemActivity.class
     };
 
     private SwipeBackLayout swipeBackLayout;

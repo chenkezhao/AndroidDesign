@@ -32,8 +32,10 @@
         <activity
             android:name=".activity.NavigationDrawerActivity"
             android:theme="@style/AppTheme" />
-        <activity android:name=".activity.RecyclerViewActivity"
-            android:theme="@style/AppTheme1"/>
+        <activity
+            android:name=".activity.RecyclerViewActivity"
+            android:theme="@style/AppTheme1" />
+        <activity android:name=".activity.RecyclerMultipleItemActivity"></activity>
     </application>
 
 </manifest>
