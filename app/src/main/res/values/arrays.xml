@@ -82,4 +82,8 @@
         <item>Java</item>
     </string-array>
 
+    <declare-styleable name="MyView">
+        <attr name="customText" format="string"/>
+    </declare-styleable>
+
 </resources>
