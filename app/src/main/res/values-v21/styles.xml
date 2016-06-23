@@ -4,5 +4,14 @@
     <style name="AppTheme" parent="AppThemeBase">
         <item name="android:navigationBarColor">#c0007419</item>
         <item name="android:statusBarColor">#c0007419</item>
+        <!--设置波纹颜色-->
+        <item name="android:colorControlHighlight">#0a6e14</item>
+
+        <!--
+        波纹设置
+        组件中的属性
+        android:background="?android:attr/selectableItemBackground"波纹有边界
+        android:background="?android:attr/selectableItemBackgroundBorderless"波纹超出边界
+        -->
     </style>
 </resources>
