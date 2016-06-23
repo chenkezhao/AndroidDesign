@@ -33,3 +33,4 @@ Android新特性、新组件及当前较潮流的设计Demo集合——Android M
 ##RecyclerView(ListView[水平、垂直]、GridView、GridView瀑布流) 的简单使用
 ![chenkezhao](https://github.com/chenkezhao/AndroidDesign/blob/master/doc/smaple/16.gif "陈科肇")
 ##RecyclerView的多Item布局实现-RecyclerView MultipleItem
+##RecyclerView适配器加载View时的动画(存在已加载的View，动画失效)。另外Spinner选择面板及enum枚举类型使用
