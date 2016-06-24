@@ -36,7 +36,8 @@
             android:name=".activity.RecyclerViewActivity"
             android:theme="@style/AppTheme" />
         <activity android:name=".activity.RecyclerMultipleItemActivity" />
-        <activity android:name=".activity.CustomViewActivity"></activity>
+        <activity android:name=".activity.CustomViewActivity" />
+        <activity android:name=".activity.GraphicsActivity"/>
     </application>
 
 </manifest>
