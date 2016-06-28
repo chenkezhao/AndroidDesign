@@ -37,3 +37,4 @@ Android新特性、新组件及当前较潮流的设计Demo集合——Android M
 ##自定义View-主要有以下步骤：在xml定义属性>在自定义View中读取属性值>onMeasure[测量自己需要占多大的空间]>onDraw[尽情绘制你的View]
 ##自定义ViewGroup
 ##Graphics之Canvas画布使用-图形、文字绘制及画板例子实现，enum枚举类型的使用
+![chenkezhao](https://github.com/chenkezhao/AndroidDesign/blob/master/doc/smaple/17.gif "陈科肇")
