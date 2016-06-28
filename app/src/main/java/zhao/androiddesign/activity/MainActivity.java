@@ -26,7 +26,7 @@ public class MainActivity extends SwipeBackActivity {
             "SwipeDismissBehavior", "TabLayout TabItem、TextInputLayout","自定义 ActionBar","ActionBar的升级版ToolBar","CardView",
             "SlidingPaneLayout滑动菜单","DrawerLayout抽屉菜单","NavigationDrawer导航菜单",
             "RecyclerView(ListView、GridView、瀑布流)，Spinner选择面板及enum枚举类型使用","RecyclerView MultipleItem",
-            "CustomView自定义View","Graphics图形绘制"
+            "CustomView自定义View","CustomViewGroup自定义ViewGroup","Graphics图形绘制"
 
     };
     private Class[] classs = {
@@ -35,7 +35,7 @@ public class MainActivity extends SwipeBackActivity {
             ActionBarActivity.class,ToolbarActivity.class,CardViewActivity.class,SlidingPaneLayoutActivity.class,
             DrawerLayoutActivity.class,NavigationDrawerActivity.class,
             RecyclerViewActivity.class,RecyclerMultipleItemActivity.class,CustomViewActivity.class,
-            GraphicsActivity.class
+            CustomViewGroupActivity.class,GraphicsActivity.class
     };
 
     private SwipeBackLayout swipeBackLayout;
