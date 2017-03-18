@@ -6,7 +6,7 @@ android {
 
     defaultConfig {
         applicationId "zhao.androiddesign"
-        minSdkVersion 17
+        minSdkVersion 19
         targetSdkVersion 25
         versionCode 1
         versionName "1.0"
@@ -21,7 +21,6 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    testCompile 'junit:junit:4.12'
     /*圆角和阴影*/
     /*仿微信网页浏览的下拉*/
     /*activity滑动退出activity*/
@@ -32,4 +31,6 @@ dependencies {
     compile 'me.imid.swipebacklayout.lib:library:1.0.0'
     compile 'com.android.support:support-v4:25.2.0'
     compile 'jp.wasabeef:recyclerview-animators:2.2.3'
+    compile 'com.android.support.constraint:constraint-layout:1.0.0-alpha9'
+    testCompile 'junit:junit:4.12'
 }

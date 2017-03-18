@@ -38,7 +38,8 @@
         <activity android:name=".activity.RecyclerMultipleItemActivity" />
         <activity android:name=".activity.CustomViewActivity" />
         <activity android:name=".activity.GraphicsActivity" />
-        <activity android:name=".activity.CustomViewGroupActivity"></activity>
+        <activity android:name=".activity.CustomViewGroupActivity" />
+        <activity android:name=".activity.TransitionSceneActivity"></activity>
     </application>
 
 </manifest>
