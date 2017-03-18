@@ -38,3 +38,5 @@ Android新特性、新组件及当前较潮流的设计Demo集合——Android M
 ##自定义ViewGroup
 ##Graphics之Canvas画布使用-图形、文字绘制及画板例子实现，enum枚举类型的使用
 ![chenkezhao](https://github.com/chenkezhao/AndroidDesign/blob/master/doc/smaple/17.gif "陈科肇")
+##Transition Scene场景和转换(动画视图)
+![chenkezhao](https://github.com/chenkezhao/AndroidDesign/blob/master/doc/smaple/18.gif "陈科肇")
