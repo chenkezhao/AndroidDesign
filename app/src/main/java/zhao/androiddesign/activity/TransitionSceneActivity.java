@@ -16,6 +16,8 @@ import static android.transition.Scene.getSceneForLayout;
 
 /**
  * 定制从一个场景布局转化到另一个场景布局的过渡
+ * https://developer.android.com/samples/BasicTransition/index.html
+ * https://developer.android.com/samples/CustomTransition/index.html
  */
 public class TransitionSceneActivity extends AppCompatActivity {
 
