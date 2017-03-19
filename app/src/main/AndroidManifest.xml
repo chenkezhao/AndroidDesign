@@ -39,7 +39,9 @@
         <activity android:name=".activity.CustomViewActivity" />
         <activity android:name=".activity.GraphicsActivity" />
         <activity android:name=".activity.CustomViewGroupActivity" />
-        <activity android:name=".activity.TransitionSceneActivity"></activity>
+        <activity android:name=".activity.TransitionSceneActivity" />
+        <activity android:name=".activity.MaterialTransitionsActivity" />
+        <activity android:name=".activity.MaterialTransitionsActivity2"></activity>
     </application>
 
 </manifest>

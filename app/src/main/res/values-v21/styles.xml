@@ -13,5 +13,41 @@
         android:background="?android:attr/selectableItemBackground"波纹有边界
         android:background="?android:attr/selectableItemBackgroundBorderless"波纹超出边界
         -->
+
+
+
+        <!-- enable window content transitions，使用窗口内容转换 -->
+        <item name="android:windowContentTransitions">true</item>
+
+        <!-- specify enter and exit transitions ，指定进入和退出的转换-->
+        <item name="android:windowEnterTransition">@android:transition/explode</item>
+        <item name="android:windowExitTransition">@android:transition/explode</item>
+
+        <!-- specify shared element transitions，指定共享元素转换 -->
+        <item name="android:windowSharedElementEnterTransition">
+            @transition/change_image_transform</item>
+        <item name="android:windowSharedElementExitTransition">
+            @transition/change_image_transform</item>
+    </style>
+
+
+    <!--
+    定制操作行为转换：
+    Material Design 应用中的操作行为转换透过通用元素之间的移动和转换提供不同状态之间的视觉连接。
+    您可为进入、退出转换以及操作行为之间的共享元素转换指定定制动画。
+    -->
+    <style name="AppThemeBaseTest" parent="android:Theme.Material">
+        <!-- enable window content transitions，使用窗口内容转换 -->
+        <item name="android:windowContentTransitions">true</item>
+
+        <!-- specify enter and exit transitions ，指定进入和退出的转换-->
+        <item name="android:windowEnterTransition">@android:transition/explode</item>
+        <item name="android:windowExitTransition">@android:transition/explode</item>
+
+        <!-- specify shared element transitions，指定共享元素转换 -->
+        <item name="android:windowSharedElementEnterTransition">
+            @transition/change_image_transform</item>
+        <item name="android:windowSharedElementExitTransition">
+            @transition/change_image_transform</item>
     </style>
 </resources>
