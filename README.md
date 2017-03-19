@@ -40,3 +40,5 @@ Android新特性、新组件及当前较潮流的设计Demo集合——Android M
 ![chenkezhao](https://github.com/chenkezhao/AndroidDesign/blob/master/doc/smaple/17.gif "陈科肇")
 ## Transition Scene场景和转换(动画视图)
 ![chenkezhao](https://github.com/chenkezhao/AndroidDesign/blob/master/doc/smaple/18.gif "陈科肇")
+## 定制操作行为转换-拥有共享元素的转换 android:transitionName
+![chenkezhao](https://github.com/chenkezhao/AndroidDesign/blob/master/doc/smaple/19.gif "陈科肇")
