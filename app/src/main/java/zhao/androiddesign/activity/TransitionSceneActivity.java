@@ -1,10 +1,19 @@
 package zhao.androiddesign.activity;
 
 import android.os.Bundle;
+import android.support.transition.ChangeBounds;
+import android.support.transition.Fade;
+import android.support.transition.Transition;
+import android.support.transition.TransitionSet;
 import android.support.v7.app.AppCompatActivity;
-import android.transition.Scene;
-import android.transition.TransitionInflater;
-import android.transition.TransitionManager;
+//import android.transition.Scene;
+//import android.transition.TransitionInflater;
+//import android.transition.TransitionManager;
+//import static android.transition.Scene.getSceneForLayout;
+import android.support.transition.Scene;
+import android.support.transition.TransitionManager;
+import static android.support.transition.Scene.getSceneForLayout;
+
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
@@ -12,10 +21,11 @@ import android.widget.Toast;
 
 import zhao.androiddesign.R;
 
-import static android.transition.Scene.getSceneForLayout;
 
 /**
  * 定制从一个场景布局转化到另一个场景布局的过渡
+ * Android 4.4.2 (API level 19) or higher
+ * https://developer.android.com/training/transitions/index.html
  * https://developer.android.com/samples/BasicTransition/index.html
  * https://developer.android.com/samples/CustomTransition/index.html
  */
@@ -57,7 +67,14 @@ public class TransitionSceneActivity extends AppCompatActivity {
 		// We create a custom TransitionManager for Scene 3, in which
 		// ChangeBounds and Fade
 		// take place at the same time.
-		mTransitionManagerForSearchCloseScene = TransitionInflater.from(this).inflateTransitionManager(R.transition.searchopenscene_transition_manager, mSceneRoot);
+		//*******************************Android 4.4.2 (API level 19) or higher Android 4.4.2（API级别19）或更高
+		//mTransitionManagerForSearchCloseScene = TransitionInflater.from(this).inflateTransitionManager(R.transition.searchopenscene_transition_manager, mSceneRoot);
+
+
+		//*******************************对于Android的版本早于4.4.2（API等级19），但大于或等于到Android 4.0（API等级14）
+//		TransitionSet transitionSet = new TransitionSet();
+//		transitionSet.addTransition(new Fade()).addTransition(new ChangeBounds());
+//		TransitionManager.beginDelayedTransition(mSceneRoot,transitionSet);
 		// END_INCLUDE(custom_transition_manager)
 
 		mSceneRoot.setOnClickListener(new View.OnClickListener() {
