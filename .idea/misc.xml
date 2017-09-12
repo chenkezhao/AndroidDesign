@@ -3,11 +3,11 @@
   <component name="EclipseCodeFormatter">
     <option name="defaultSettings" value="true" />
     <option name="formatter" value="ECLIPSE" />
-    <option name="id" value="1475803305968" />
-    <option name="importOrderConfigFilePath" value="$PROJECT_DIR$/../../../Android/StudioSetting/Eclipse formatter self.xml" />
+    <option name="id" value="1470622078993" />
+    <option name="importOrderConfigFilePath" value="E:/0Develop/Android/Eclipse formatter self.xml" />
     <option name="importOrderFromFile" value="true" />
     <option name="name" value="default" />
-    <option name="pathToConfigFileJava" value="$PROJECT_DIR$/../../../Android/StudioSetting/Eclipse formatter self.xml" />
+    <option name="pathToConfigFileJava" value="E:/0Develop/Android/Eclipse formatter self.xml" />
     <option name="selectedJavaProfile" value="Eclipse formatter self" />
   </component>
   <component name="EntryPointsManager">
